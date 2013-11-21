@@ -6,7 +6,7 @@
 #SBATCH -n 16
 #SBATCH -p normal
 #SBATCH -t 12:00:00
-#SBATCH -A P.hallii_expression
+#SBATCH -A #Account number
 
 module load launcher
 module load bwa
