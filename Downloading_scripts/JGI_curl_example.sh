@@ -5,7 +5,7 @@
 #SBATCH -n 16
 #SBATCH -p normal
 #SBATCH -t 24:00:00
-#SBATCH -A P.hallii_expression
+#SBATCH -A #Account number
 
 curl https://signon.jgi.doe.gov/signon/create --data-ascii login=<e-mail>\&password=<password> -b cookies -c cookies > /dev/null
 curl http://genome.jgi.doe.gov/PanhalGIL42/download/_SDM/51d4d289067c014cd6eb71a4/2247.5.1836.fastq.gz -b cookies -c cookies > GIL42_2247.5.1836.fastq.gz
