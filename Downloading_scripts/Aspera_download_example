@@ -1,0 +1,14 @@
+#This is an example of using Aspera to download data from the
+#NCBI Sequence Read Archive (SRA)
+
+
+# Path to the executable in the hidden folder
+/home1/01499/oakglade/.aspera/connect/bin/ascp \
+# the path to the KEY
+-i /home1/01499/oakglade/.aspera/connect/etc/asperaweb_id_dsa.putty \
+#some important flags. You can also use 'r' flag to recursively grab the entire run folder, if multiple files
+-QT -l600m \
+# Path to the SRR file on SRA
+anonftp@ftp-trace.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR561/SRR561488/SRR561488.sra \
+# the output directory
+/scratch/01499/oakglade/hallii_sra/DOF11 
