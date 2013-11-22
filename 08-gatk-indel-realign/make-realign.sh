@@ -2,6 +2,7 @@
 # Kyle Hernandez
 # Modified by David Lowry
 # make-realign.sh - create parameter files for the IndelRealigner targets and realigned BAM files.
+# Important:if you have phred +64 you should add this flag to both parts of the indel realigner step: -fixMisencodedQuals
 
 if [[ -z $1 ]] | [[ -z $2 ]] | [[ -z $3 ]] | [[ -z $4 ]]; then
 echo "Usage make-indel-ra.sh in/dir/ out/target/ out/realigned/ reference.fa"
