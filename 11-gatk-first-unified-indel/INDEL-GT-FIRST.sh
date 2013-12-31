@@ -6,7 +6,7 @@
 #SBATCH -n 16
 #SBATCH -p normal
 #SBATCH -t 48:00:00
-#SBATCH -A P.hallii_expression
+#SBATCH -A XXXX
 
 SCRIPT="/home1/01499/oakglade/bin/GenomeAnalysisTK-2.7-2-g6bda569/GenomeAnalysisTK.jar" # Path to gatk, or you can use module load gatk
 INDIR="/scratch/01499/oakglade/hallii_combined/08-gatk-indel-realign/realigned/" # Path to the realigned BAM files
